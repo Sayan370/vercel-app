@@ -4,7 +4,7 @@ const connectDB = async () => {
     try {
         //database Name
         const databaseName='user_db';
-        const con = await mongoose.connect(`mongodb+srv://dbuser:YnnZAXdxJtI6z3kh@tubaiportfolio.a6iek.mongodb.net/${databaseName}?retryWrites=true&w=majority`, { 
+        const con = await mongoose.connect(`mongodb://127.0.0.1:27017/${databaseName}`, { 
         useNewUrlParser: true,
         useUnifiedTopology: true,
         useCreateIndex: true
